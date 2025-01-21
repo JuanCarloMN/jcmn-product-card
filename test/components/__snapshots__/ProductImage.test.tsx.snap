@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage Debe de mostrar el compoente con la imagen personalizada 1`] = `[Function]`;
+
+exports[`ProductImage Debe de mostrar el componente con la imagen del producto 1`] = `[Function]`;

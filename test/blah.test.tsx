@@ -1,11 +1,12 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Thing } from '../src';
+import React from "react";
+const ReactTestRenderer = require('react-test-renderer');
+import { ProductTitle } from "../src/components/ProductTitle";
 
-describe('it', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Thing />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-});
+describe('ProductTitle', () => {
+    test('Debe de mostrar el componente correctamente con el titulo personalizado', () => {
+        const wraper = ReactTestRenderer.create(
+            <ProductTitle title="Custom Product" />
+        )
+        expect( wraper.toJSON ).toMatchSnapshot();
+    })
+})

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard Debe de incrementar el contador 1`] = `null`;
+
+exports[`ProductCard Debe de mostrar el compoente correctamente 1`] = `null`;

@@ -10,7 +10,7 @@ export interface Props {
     style?: React.CSSProperties;
 }
 
-export const ProductImage = ({ img, className, style }: Props) => {
+export const ProductImage = ({ img, className, style }: Props ) => {
 
     const { product } = useContext( ProductContext );
     let imgToShow: string;
@@ -18,16 +18,17 @@ export const ProductImage = ({ img, className, style }: Props) => {
     if ( img ) {
         imgToShow = img;
     } else if ( product.img ) {
-        imgToShow = product.img;
+        imgToShow = product.img
     } else {
         imgToShow = noImage;
     }
+    
     return (
         <img 
             className={ `${ styles.productImg } ${ className }` } 
-            style={ style }
             src={ imgToShow } 
-            alt="Product image" 
+            style={ style }
+            alt="Product" 
         />
-    )
+    );
 }
