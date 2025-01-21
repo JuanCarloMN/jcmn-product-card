@@ -5,6 +5,7 @@ import styles from '../styles/styles.module.css'
 import { InitialValues, onChangeArgs, Product, ProductCardHandler, ProductContextProps } from '../interfaces/interfaces';
 
 export const ProductContext = createContext( {} as ProductContextProps );
+
 const { Provider } = ProductContext;
 
 export interface Props {
